@@ -1,0 +1,25 @@
+## Professional optical system improving the lens's optical quality at the source
+
+Leica lenses' professional capabilities come from their advanced optical technology, so you can tell your own story with light and shadow, drawing the viewer in.
+
+image link: [https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-12s-ultra/0f16e3beb16a635ad8ce3a1ea8287a1d.png?f=webp]
+Aspherical High Transmittance Lens
+
+image link: [https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-12s-ultra/0f16e3beb16a635ad8ce3a1ea8287a1d.png?f=webp]
+Professional anti-glare lens coating: ALD ultra-low reflectance technology
+
+image link: [https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-12s-ultra/3733102d5592a192196b9fef5550bedf.png?f=webp]
+Lens edge ink coating
+
+image link: [https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-12s-ultra/f0c4efaeb29161da9adce8d54cdb98ab.png?f=webp]
+Cyclic olefin copolymer (COC) material
+
+image link: [https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-12s-ultra/f32641803e7d5305f4161b6e3c28cd98.png?f=webp]
+Infrared light filter with spin coating technology
+
+
+
+
+# To optimize the video:
+
+ffmpeg -i S12_Ultra_AdXiaomi.mp4 -vf "scale=1920:-2" -c:v libx264 -crf 23 -preset slow -g 1 -keyint_min 1 -sc_threshold 0 -pix_fmt yuv420p -movflags +faststart -an S12_scrub_optimized.mp4 
