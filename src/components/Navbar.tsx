@@ -10,8 +10,6 @@ const navLinks = [
   "Store",
   "Phones",
   "Tablets",
-  "TV & Smart Home",
-  "Smart Watch & Audio",
   "Discover",
   "Support",
 ];
@@ -26,15 +24,18 @@ const Navbar = () => {
   }, []);
 
   return (
-    <motion.nav
-      initial={{ y: -60, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
-      className={`fixed top-0 left-0 right-0 z-50 border-b border-white/10 overflow-hidden ${
-        scrolled ? "bg-black/70 backdrop-blur-lg" : "bg-black/40 backdrop-blur-md"
-      }`}
-    >
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-8 lg:px-12 py-4 text-white">
+    <nav className="fixed top-0 left-0 right-0 z-50 w-full">
+      <motion.div
+        initial={{ y: -60, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className={`mx-auto mt-4 px-6 transition-all duration-500 ease-in-out lg:px-12 ${
+          scrolled
+            ? "bg-black/70 max-w-4xl rounded-2xl backdrop-blur-lg shadow-lg lg:px-5"
+            : "max-w-7xl"
+        }`}
+      >
+        <div className="flex items-center justify-between py-3 lg:py-4 text-white">
         {/* Left: Logo */}
         <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300 }} className="flex-shrink-0">
           <Link href="/" className="flex items-center space-x-3">
@@ -93,8 +94,9 @@ const Navbar = () => {
             </motion.button>
           ))}
         </motion.div>
-      </div>
-    </motion.nav>
+        </div>
+      </motion.div>
+    </nav>
   );
 };
 

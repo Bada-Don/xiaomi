@@ -19,6 +19,9 @@ export default function Home() {
     { start: 0, end: 165, text: 'Presenting to you' },
     { start: 170, end: 230, text: 'The All new' },
     { start: 235, end: 430, text: 'Xiaomi & S12 Ultra' },
+    { start: 500, end: 600, text: 'Leica Partnership' },
+    { start: 650, end: 850, text: 'Discover a new reality on the other side of the lens' },
+    { start: 1170, end: 1300, text: 'Professional Optical System' },
   ];
 
   return (
