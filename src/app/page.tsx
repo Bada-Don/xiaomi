@@ -7,12 +7,19 @@ import Footer from '@/components/footer';
 import ScrollTracker from '@/components/ScrollTracker';
 import AnimatedSection from '@/components/AnimatedSection';
 import Navbar from '@/components/Navbar';
+import ScrollText from '@/components/ScrollText';
 
 export default function Home() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
   useVideoScroll(videoRef, containerRef);
+
+  const scrollTextRanges = [
+    { start: 0, end: 165, text: 'Presenting to you' },
+    { start: 170, end: 230, text: 'The All new' },
+    { start: 235, end: 430, text: 'Xiaomi & S12 Ultra' },
+  ];
 
   return (
     <main className="bg-black">
@@ -33,6 +40,8 @@ export default function Home() {
             muted
             playsInline
           />
+          {/* Animated scroll text overlay */}
+          <ScrollText ranges={scrollTextRanges} />
         </div>
       </div>
 
