@@ -28,4 +28,4 @@ Infrared light filter with spin coating technology
 
 # To optimize the video:
 
-ffmpeg -i S12_Ultra_AdXiaomi.mp4 -vf "scale=1920:-2" -c:v libx264 -crf 23 -preset slow -g 1 -keyint_min 1 -sc_threshold 0 -pix_fmt yuv420p -movflags +faststart -an S12_scrub_optimized.mp4 
+ffmpeg -i Xiaomi_S12_YT.mp4 -vf "scale=1920:-2" -c:v libx264 -crf 23 -preset slow -g 1 -keyint_min 1 -sc_threshold 0 -pix_fmt yuv420p -movflags +faststart -an S12_scrub_optimized.mp4 

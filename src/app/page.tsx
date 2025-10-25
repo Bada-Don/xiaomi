@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <main className="bg-black">
       {/* Scroll Progress Tracker */}
-      <ScrollTracker />
+      {/* <ScrollTracker /> */}
 
       {/* Navbar with subtle overlay */}
       <Navbar />
@@ -38,12 +38,12 @@ export default function Home() {
   <video
     ref={videoRef}
     className="absolute inset-0 w-full h-full object-cover"
-    src="https://github.com/Bada-Don/xiaomi/releases/download/v1.0-video/S12_scrub_optimized.mp4"
+    src="/S12_YT_scrub_optimized.mp4"
     preload="metadata"
     muted
     playsInline
   />
-  <ScrollText ranges={scrollTextRanges} />
+  {/* <ScrollText ranges={scrollTextRanges} /> */}
 </div>
 
       </div>

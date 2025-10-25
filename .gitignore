@@ -11,7 +11,9 @@
 !.yarn/versions
 
 # Videos:
-/public/S12_scrub_optimized.mp4
+public/S12_scrub_optimized.mp4
+public/Xiaomi_S12_YT.mp4
+public/S12_YT_scrub_optimized.mp4
 
 # testing
 /coverage
