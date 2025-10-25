@@ -34,18 +34,18 @@ export default function Home() {
 
       {/* Hero Section - Video */}
       <div ref={containerRef} className="relative h-[400vh]">
-        <div className="sticky top-0 h-screen w-screen overflow-hidden">
-          <video
-            ref={videoRef}
-            className="absolute inset-0 w-full h-full object-cover"
-            src="/S12_scrub_optimized.mp4"
-            preload="metadata"
-            muted
-            playsInline
-          />
-          {/* Animated scroll text overlay */}
-          <ScrollText ranges={scrollTextRanges} />
-        </div>
+<div className="sticky top-0 h-screen w-screen overflow-hidden">
+  <video
+    ref={videoRef}
+    className="absolute inset-0 w-full h-full object-cover"
+    src="https://github.com/Bada-Don/xiaomi/releases/download/v1.0-video/S12_scrub_optimized.mp4"
+    preload="metadata"
+    muted
+    playsInline
+  />
+  <ScrollText ranges={scrollTextRanges} />
+</div>
+
       </div>
 
       {/* Second Section - Features */}
